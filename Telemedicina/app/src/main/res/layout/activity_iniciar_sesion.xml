@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".CrearCuenta">
+
+    <ImageButton
+        android:id="@+id/back2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back"
+        app:tint="#005F8A"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <LinearLayout
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="180dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:lineSpacingExtra="24sp"
+            android:text="Inicio Sesión"
+            android:textAlignment="center"
+            android:textColor="#005F8A"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/nombre"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.309" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="#FFFFFF"
+            android:textColorHint="#6F494545"
+            app:layout_constraintBottom_toTopOf="@+id/iniciar"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/correoText"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:hint="Correo"
+                android:inputType="textEmailAddress"
+                android:textColor="#000000"
+                android:textColorHighlight="#005F8A"
+                android:textColorHint="#000000"
+                android:textColorLink="#005F8A"
+                tools:ignore="TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="#FFFFFF"
+            android:textColorHint="#6F494545"
+            app:endIconDrawable="@drawable/pass_button"
+            app:endIconMode="password_toggle"
+            app:endIconTint="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/iniciar"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passText"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:textColor="#000000"
+                android:textColorHighlight="#005F8A"
+                android:textColorHint="#000000"
+                android:textColorLink="#005F8A"
+                tools:ignore="TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/olvidaPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:backgroundTint="#00FFFFFF"
+            android:text="¿Olvidaste tú contraseña?"
+            android:textColor="#1685DD" />
+
+        <Button
+            android:id="@+id/iniciar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/press_button"
+            android:text="Iniciar Sesión"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

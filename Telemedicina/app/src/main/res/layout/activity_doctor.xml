@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    tools:context=".DoctorActivity">
+
+    <Button
+        android:id="@+id/reservar"
+        android:layout_width="308dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/press_button"
+        android:text="Reservar"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPlannedDate"
+        tools:ignore="TextSizeCheck,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="36dp"
+        android:lineSpacingExtra="24sp"
+        android:text="RESERVAR CITA"
+        android:textAlignment="center"
+        android:textColor="#005F8A"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/nombreDoctor"
+        android:layout_width="220dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="132dp"
+        android:text="Nombre"
+        android:textAlignment="center"
+        android:textColor="#005F8A"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="7dp"
+        android:background="#005F8A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombreDoctor" />
+
+    <ImageButton
+        android:id="@+id/llamadaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="8dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:srcCompat="@drawable/call"
+        app:tint="#005F8A"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="112dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="7dp"
+        android:text="Llamar"
+        android:textAlignment="center"
+        android:textColor="#005F8A"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llamadaButton" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="112dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="7dp"
+        android:text="Correo"
+        android:textAlignment="center"
+        android:textColor="#005F8A"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llamadaButton" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="112dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="36dp"
+        android:text="Video Call"
+        android:textAlignment="center"
+        android:textColor="#005F8A"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llamadaButton" />
+
+    <ImageButton
+        android:id="@+id/CorreoButton"
+        android:layout_width="53dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="8dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/llamadaButton"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:srcCompat="@drawable/mail"
+        app:tint="#005F8A"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/VideoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="69dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:srcCompat="@drawable/videocam"
+        app:tint="#005F8A"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="120dp"
+        android:background="#005F8A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombreDoctor" />
+
+    <EditText
+        android:id="@+id/etPlannedDate"
+        android:layout_width="143dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="31dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="dd/mm/yyyy"
+        android:inputType="date"
+        android:maxLines="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <EditText
+        android:id="@+id/to_time"
+        android:layout_width="143dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="51dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="12:00 p. m."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back"
+        app:tint="#005F8A"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

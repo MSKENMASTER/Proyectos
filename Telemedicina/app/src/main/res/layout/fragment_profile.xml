@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_perfil"
+    tools:context=".profileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00FFFFFF">
+
+        <TextView
+            android:id="@+id/correoPerfil"
+            android:layout_width="298dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:inputType="textMultiLine|textEmailAddress"
+            android:text="Correo"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CambiarImagen" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/CambiarImagen"
+            android:layout_width="141dp"
+            android:layout_height="129dp"
+            android:layout_marginStart="132dp"
+            android:layout_marginTop="1dp"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/nombrePerfil"
+            android:layout_width="298dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="80dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:text="Nombre"
+            android:textAlignment="textStart"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/correoPerfil" />
+
+        <EditText
+            android:id="@+id/dniPerfil"
+            android:layout_width="298dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:text="DNI"
+            android:textAlignment="textStart"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nombrePerfil" />
+
+        <EditText
+            android:id="@+id/telefonoPerfil"
+            android:layout_width="298dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:text="Teléfono"
+            android:textAlignment="textStart"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dniPerfil" />
+
+        <Button
+            android:id="@+id/aceptar"
+            android:layout_width="298dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="96dp"
+            android:background="@drawable/press_button"
+            android:text="Guardar Cambios"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/telefonoPerfil"
+            tools:ignore="TextSizeCheck,TextSizeCheck" />
+
+        <Button
+            android:id="@+id/editarCampos"
+            android:layout_width="298dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/press_button"
+            android:text="Editar Información"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/telefonoPerfil" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

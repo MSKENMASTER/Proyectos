@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "188856208716",
+    "project_id": "proyecto-dam-ded5c",
+    "storage_bucket": "proyecto-dam-ded5c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:188856208716:android:415d2efb31f7008f3853e9",
+        "android_client_info": {
+          "package_name": "com.telemedicina"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "188856208716-ouorccmacoqioushndd6jvgi69c9lgdm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_KcT34382ijEJE1DNaZfUBPKU2RqwJek"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "188856208716-ouorccmacoqioushndd6jvgi69c9lgdm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

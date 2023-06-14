@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".CrearCuenta">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/back3"
+            android:layout_width="73dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#00FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back"
+            app:tint="#005F8A"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <LinearLayout
+            android:layout_width="351dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="84dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:lineSpacingExtra="24sp"
+                android:text="CREAR CUENTA"
+                android:textAlignment="center"
+                android:textColor="#005F8A"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/nombre"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.309" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="#FFFFFF"
+                android:textColorHint="#6F494545"
+                app:endIconTint="#000000"
+                app:layout_constraintBottom_toTopOf="@+id/iniciar"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nombreText"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:hint="Nombre"
+                    android:inputType="textPersonName"
+                    android:textColor="#000000"
+                    android:textColorHighlight="#005F8A"
+                    android:textColorHint="#000000"
+                    android:textColorLink="#005F8A"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/dni"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="#FFFFFF"
+                android:textColorHint="#6F494545"
+                app:endIconTint="#000000"
+                app:layout_constraintBottom_toTopOf="@+id/iniciar"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dniText"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:hint="DNI"
+                    android:inputType="text"
+                    android:textColor="#000000"
+                    android:textColorHighlight="#005F8A"
+                    android:textColorHint="#000000"
+                    android:textColorLink="#005F8A"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/telefono"
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:layout_marginBottom="15dp"
+                android:background="#FFFFFF"
+                android:textColorHint="#6F494545"
+                app:endIconTint="#000000"
+                app:layout_constraintBottom_toTopOf="@+id/iniciar"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/telefonoText"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:hint="Teléfono"
+                    android:inputType="phone"
+                    android:textColor="#000000"
+                    android:textColorHighlight="#005F8A"
+                    android:textColorHint="#000000"
+                    android:textColorLink="#005F8A"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/correo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="#FFFFFF"
+                android:textColorHint="#6F494545"
+                app:endIconTint="#000000"
+                app:layout_constraintBottom_toTopOf="@+id/iniciar"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/correoText"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:hint="Correo"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#000000"
+                    android:textColorHighlight="#005F8A"
+                    android:textColorHint="#000000"
+                    android:textColorLink="#005F8A"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp"
+                android:background="#FFFFFF"
+                android:textColorHint="#6F494545"
+                app:endIconDrawable="@drawable/pass_button"
+                app:endIconMode="password_toggle"
+                app:endIconTint="#000000"
+                app:layout_constraintBottom_toTopOf="@+id/iniciar"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passText"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Contraseña"
+                    android:inputType="textPassword"
+                    android:textColor="#000000"
+                    android:textColorHighlight="#005F8A"
+                    android:textColorHint="#000000"
+                    android:textColorLink="#005F8A"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/pass2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="#FFFFFF"
+                android:textColorHint="#6F494545"
+                app:endIconDrawable="@drawable/pass_button"
+                app:endIconMode="password_toggle"
+                app:endIconTint="#000000"
+                app:layout_constraintBottom_toTopOf="@+id/iniciar"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Repite Contraseña"
+                    android:inputType="textPassword"
+                    android:textColor="#000000"
+                    android:textColorHighlight="#005F8A"
+                    android:textColorHint="#000000"
+                    android:textColorLink="#005F8A"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checkedButton="@id/Usuario"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/Usuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Usuario"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <RadioButton
+                    android:id="@+id/Doctor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Doctor"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </RadioGroup>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:entries="@array/especialidad"
+                android:minHeight="48dp"
+                android:spinnerMode="dialog" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:buttonTint="#005F8A"
+                android:minHeight="48dp"
+                android:text="Al registrarse, acepta las Términos y condiciones además de la Política de privacidad."
+                android:textColor="#005F8A" />
+
+            <Button
+                android:id="@+id/iniciar"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/press_button"
+                android:text="CREAR CUENTA"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

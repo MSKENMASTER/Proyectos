@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="115dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="5dp"
+    android:background="@drawable/doctors_card_background">
+
+    <TextView
+        android:id="@+id/especialidadCita"
+        android:layout_width="142dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="7dp"
+        android:text="Especialidad"
+        android:textColor="#005F8A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/doctorCita"
+        app:layout_constraintTop_toBottomOf="@+id/horaCita" />
+
+    <TextView
+        android:id="@+id/doctorCita"
+        android:layout_width="142dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="7dp"
+        android:text="Doctor"
+        android:textColor="#005F8A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fechaCita" />
+
+    <TextView
+        android:id="@+id/horaCita"
+        android:layout_width="142dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="16dp"
+        android:text="Hora"
+        android:textColor="#005F8A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/fechaCita"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fechaCita"
+        android:layout_width="142dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Fecha"
+        android:textColor="#005F8A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/editarButton"
+        android:layout_width="64dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cancelarButton"
+        app:srcCompat="@drawable/edit"
+        app:tint="#005F8A"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/cancelarButton"
+        android:layout_width="68dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cancelar"
+        app:tint="#FF0000"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

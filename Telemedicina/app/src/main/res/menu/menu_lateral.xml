@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/navigation_view">
+
+
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_home"
+                    android:icon="@drawable/home"
+                    android:title="Inicio" />
+
+            </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group2">
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profile"
+            android:title="Perfil" />
+
+        <item
+            android:id="@+id/nav_Citas"
+            android:icon="@drawable/calendar"
+            android:title="Citas" />
+
+        <item
+            android:id="@+id/nav_llamadas"
+            android:icon="@drawable/llamadas"
+            android:title="Llamadas" />
+
+    </group>
+
+</menu>

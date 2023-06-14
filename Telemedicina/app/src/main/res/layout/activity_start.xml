@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/buttons"
+        android:background="#FFFFFF"
+        android:gravity="center">
+
+        <ImageSwitcher
+            android:id="@+id/imageSwitcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></ImageSwitcher>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp">
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/press_button"
+            android:onClick="start"
+            android:text="Iniciar Sesión"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/buttonCrearCuenta"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/press_button"
+            android:onClick="stop"
+            android:shadowColor="#534F4F"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:text="Crear Cuenta"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</RelativeLayout>
